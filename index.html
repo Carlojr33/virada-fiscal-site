@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111e">
+<meta name="description" content="Virada Fiscal: economia, mudanças tributárias e negócios explicados de forma simples, com fontes e contexto.">
+<title>Virada Fiscal — Entenda antes de sentir no bolso</title>
+<style>
+:root{--bg:#07111e;--panel:#0d1a2a;--panel2:#102338;--line:#23364b;--text:#f4f7fb;--muted:#a8b7c8;--yellow:#ffd229;--cyan:#5be7f5;--green:#71e6bd;--radius:18px;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:#f4f7fa;color:#101c2a;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,var(--yellow),var(--cyan),#8a7dff)}
+header{position:sticky;top:0;z-index:20;background:rgba(7,17,30,.94);backdrop-filter:blur(14px);border-bottom:1px solid #1e3044;color:var(--text)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.06em;line-height:1}.brand-mark{width:42px;height:42px;border:2px solid var(--yellow);border-radius:12px;display:grid;place-items:center;color:var(--yellow);font-size:21px;font-weight:950;transform:skew(-5deg)}.brand-name{font-size:16px}.brand-name span{display:block;color:var(--yellow);letter-spacing:.16em;margin-top:4px}.navlinks{display:flex;gap:25px;align-items:center;font-size:13px;color:#c5d0dc}.navlinks a:hover,.navlinks a.active{color:var(--yellow)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--yellow);color:#101725;font-weight:800;border:0;border-radius:999px;padding:12px 18px;cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px #ffd22930}.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px}
+.hero{background:radial-gradient(ellipse at 80% 25%,#123b56 0,transparent 40%),radial-gradient(ellipse at 20% 90%,#192a48 0,transparent 42%),var(--bg);color:var(--text);overflow:hidden;position:relative}.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent);pointer-events:none}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:72px 0 78px}.eyebrow{display:inline-flex;gap:9px;align-items:center;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;color:var(--cyan)}.dot{width:7px;height:7px;background:var(--yellow);border-radius:50%;box-shadow:0 0 15px var(--yellow)}h1{font-size:clamp(38px,5vw,64px);line-height:1.02;letter-spacing:-.045em;margin:18px 0 20px;max-width:680px}h1 em{font-style:normal;color:var(--yellow)}.hero p{font-size:17px;line-height:1.7;color:#bdcbd9;max-width:570px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn.secondary{background:transparent;border:1px solid #52677c;color:white}.hero-note{font-size:12px!important;color:#8194a8!important;margin-top:20px!important}.hero-visual{position:relative;min-height:350px;border:1px solid #2a4962;border-radius:26px;background:linear-gradient(140deg,#102b40dd,#081320f5);padding:24px;box-shadow:0 28px 80px #0005}.visual-top{display:flex;justify-content:space-between;align-items:center;color:#9eb5c9;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.live{color:var(--green);display:flex;align-items:center;gap:6px}.live:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}.chart{height:190px;position:relative;margin:24px 0 12px;border-bottom:1px solid #345064;background:repeating-linear-gradient(to bottom,transparent 0 46px,#ffffff0d 47px 48px)}.chart svg{width:100%;height:100%;overflow:visible}.visual-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:12px;border-radius:12px;background:#ffffff08;border:1px solid #ffffff0d}.stat small{display:block;color:#9fb0c0;font-size:10px}.stat strong{display:block;color:white;font-size:15px;margin-top:4px}.stat strong span{color:var(--cyan);font-size:10px}.float-tag{position:absolute;right:-12px;top:80px;background:var(--yellow);color:#111a25;padding:10px 13px;border-radius:12px;font-weight:900;font-size:11px;box-shadow:0 10px 30px #0005}
+.trustbar{background:#0b1927;color:#bdc9d6;border-top:1px solid #23374a;border-bottom:1px solid #23374a}.trust-inner{display:flex;justify-content:space-between;gap:20px;padding:17px 0;font-size:12px;flex-wrap:wrap}.trust-inner span{display:flex;align-items:center;gap:8px}.trust-inner b{color:var(--yellow)}
+section{padding:70px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.kicker{color:#087f98;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.section-head h2{font-size:clamp(28px,3vw,38px);letter-spacing:-.035em;line-height:1.1;margin:8px 0 0}.section-head p{color:#667688;max-width:450px;margin:0;font-size:14px}.text-link{color:#087f98;font-size:13px;font-weight:800;white-space:nowrap}
+.feature-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:20px}.feature-card{border-radius:var(--radius);overflow:hidden;background:var(--panel);color:white;min-height:320px;position:relative;isolation:isolate}.feature-art{position:absolute;inset:0;z-index:-2;background:radial-gradient(circle at 75% 35%,#0b7897 0,transparent 28%),linear-gradient(130deg,#122d43,#08111d 72%)}.feature-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#08111df5 0%,#08111dc9 50%,#08111d30 100%)}.art-orbit{position:absolute;width:210px;height:210px;border:1px solid #55dff355;border-radius:50%;right:6%;top:18%;box-shadow:0 0 0 25px #55dff30a,0 0 0 55px #55dff307}.art-orbit:before,.art-orbit:after{content:"";position:absolute;border:1px solid #ffd22966;inset:22%;transform:rotate(45deg);border-radius:25px}.art-orbit:after{inset:39%;border-color:#5be7f5aa}.feature-content{padding:34px;max-width:600px;min-height:320px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end}.tag{display:inline-block;background:var(--yellow);color:#15202d;border-radius:5px;padding:5px 8px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:950}.feature-content h3{font-size:clamp(26px,3vw,38px);line-height:1.08;letter-spacing:-.035em;margin:14px 0 12px;max-width:520px}.feature-content p{color:#c1cfdb;max-width:490px;margin:0 0 20px;font-size:14px}.feature-small{display:flex;flex-direction:column;justify-content:space-between;padding:25px;background:linear-gradient(145deg,#122d42,#0b1725);border:1px solid #dbe3eb;border-radius:var(--radius);min-height:320px}.feature-small .mini-chart{height:100px;margin:12px 0;background:repeating-linear-gradient(to bottom,transparent 0 32px,#ffffff10 33px 34px);border-bottom:1px solid #2b4c63}.feature-small .mini-chart svg{width:100%;height:100%}.feature-small h3{font-size:23px;line-height:1.15;color:white;margin:8px 0}.feature-small p{color:#aebdcb;font-size:13px;margin:0}
+.category-row{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px}.chip{border:1px solid #d6e0e8;color:#46586a;background:white;border-radius:999px;padding:9px 15px;font-size:12px;font-weight:750;cursor:pointer}.chip.active,.chip:hover{background:#0d2032;color:white;border-color:#0d2032}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.news-card{background:white;border:1px solid #e0e7ed;border-radius:16px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}.news-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px #13263a12}.news-art{height:170px;position:relative;overflow:hidden;background:linear-gradient(135deg,#0a1a2a,#16415a)}.news-art:before{content:"";position:absolute;width:190px;height:190px;right:-25px;top:12px;border:1px solid #62dce566;border-radius:50%;box-shadow:0 0 0 20px #62dce511,0 0 0 42px #62dce508}.news-art:after{content:"";position:absolute;width:95px;height:95px;right:30px;top:40px;border:1px solid #ffd229aa;transform:rotate(35deg);border-radius:18px;box-shadow:0 0 30px #ffd22914}.news-art.gold{background:linear-gradient(135deg,#13202b,#4b3815)}.news-art.purple{background:linear-gradient(135deg,#101c34,#31285c)}.news-art.teal{background:linear-gradient(135deg,#0b2530,#12615f)}.news-art .art-label{position:absolute;left:18px;top:17px;color:var(--yellow);font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.news-art .art-symbol{position:absolute;right:42px;top:55px;font-size:54px;font-weight:200;color:#d9faff;opacity:.88;z-index:1}.news-body{padding:21px;display:flex;flex-direction:column;flex:1}.news-meta{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#087f98;font-weight:900}.news-body h3{font-size:19px;line-height:1.25;letter-spacing:-.02em;margin:10px 0}.news-body p{font-size:13px;color:#617183;margin:0 0 20px}.read-link{margin-top:auto;font-size:12px;color:#0b788d;font-weight:900;display:flex;align-items:center;gap:7px}
+.explain{background:#e9f0f5}.explain-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}.explain h2{font-size:clamp(30px,3.5vw,44px);line-height:1.08;letter-spacing:-.04em;margin:12px 0}.explain p{color:#5f7081;font-size:15px}.steps{display:grid;gap:12px}.step{display:flex;gap:16px;padding:18px;border-radius:14px;background:white;border:1px solid #dce5ec}.step-num{flex:0 0 36px;height:36px;display:grid;place-items:center;border-radius:11px;background:#0d2032;color:var(--yellow);font-weight:900}.step h3{font-size:15px;margin:0 0 4px}.step p{font-size:12px;margin:0;color:#667688}
+.newsletter{background:linear-gradient(120deg,#0a1725,#102e43);color:white;border-radius:22px;padding:34px;display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:center}.newsletter h2{font-size:28px;line-height:1.1;margin:0 0 10px}.newsletter p{color:#b3c3d2;font-size:13px;margin:0}.signup{display:flex;gap:8px}.signup input{min-width:0;flex:1;background:#ffffff0c;border:1px solid #395166;color:white;padding:13px 15px;border-radius:999px;outline:none}.signup input:focus{border-color:var(--cyan)}.form-note{font-size:11px;color:#91a5b8;margin-top:9px}
+footer{background:#06101b;color:#c3ced9;padding:45px 0 22px}.footer-top{display:flex;justify-content:space-between;gap:40px;padding-bottom:30px;border-bottom:1px solid #203143}.footer-brand p{max-width:330px;color:#8799ab;font-size:12px}.footer-links{display:flex;gap:50px}.footer-links div{display:grid;gap:10px;align-content:start}.footer-links strong{color:white;font-size:12px;margin-bottom:4px}.footer-links a{font-size:12px;color:#9dafc0}.footer-links a:hover{color:var(--yellow)}.legal{display:flex;justify-content:space-between;gap:20px;padding-top:20px;color:#718497;font-size:10px}
+.modal{position:fixed;inset:0;z-index:50;background:#020812c9;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{width:min(680px,100%);max-height:85vh;overflow:auto;background:white;border-radius:20px;padding:30px;position:relative}.modal-close{position:absolute;right:16px;top:14px;border:0;background:#edf2f6;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer}.modal-box h2{line-height:1.15;font-size:30px;margin:14px 35px 12px 0}.modal-box p{color:#506173}.modal-source{border-top:1px solid #e0e7ed;padding-top:15px;font-size:12px;color:#65788b}.modal-source a{color:#087f98;text-decoration:underline}
+@media(max-width:850px){.navlinks{gap:14px}.hero-inner{grid-template-columns:1fr;gap:35px;padding:56px 0}.hero-visual{min-height:300px}.feature-grid,.explain-grid{grid-template-columns:1fr}.feature-small{min-height:270px}.news-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.newsletter{grid-template-columns:1fr}.footer-top{flex-direction:column}.footer-links{gap:35px}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 28px))}.nav{height:66px}.brand-mark{width:37px;height:37px}.brand-name{font-size:14px}.menu-btn{display:block}.nav-cta{display:none}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:#07111e;padding:18px 22px 24px;border-bottom:1px solid #24384d;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.hero-inner{padding:48px 0}.hero p{font-size:15px}.hero-visual{padding:17px;min-height:275px}.chart{height:145px}.float-tag{right:8px;top:65px}.trust-inner{gap:12px;display:grid;grid-template-columns:1fr 1fr}section{padding:50px 0}.feature-content{padding:24px;min-height:300px}.feature-small{padding:22px}.news-grid{grid-template-columns:1fr}.news-art{height:185px}.explain-grid{gap:28px}.newsletter{padding:25px 20px}.signup{flex-direction:column}.signup .btn{width:100%}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:25px}.legal{flex-direction:column}.section-head p{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Virada Fiscal, início"><span class="brand-mark">VF</span><span class="brand-name">VIRADA<span>FISCAL</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Abrir menu">☰</button>
+    <nav class="navlinks" id="navlinks" aria-label="Navegação principal">
+      <a href="#inicio" class="active">Início</a><a href="#noticias">Notícias</a><a href="#categorias">Economia</a><a href="#guia">Guia gratuito</a><a href="#sobre">Sobre</a>
+    </nav>
+    <a class="nav-cta" href="#newsletter">Receber novidades ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Informação que ajuda a decidir</div>
+      <h1>Entenda as mudanças <em>antes de sentir no bolso.</em></h1>
+      <p>Economia, regras tributárias e negócios explicados sem complicação — com contexto, exemplos e fontes para você conferir.</p>
+      <div class="hero-actions"><a class="btn" href="#noticias">Explorar conteúdos <span>→</span></a><a class="btn secondary" href="#sobre">Conheça o projeto</a></div>
+      <p class="hero-note">Informação clara. Fontes identificadas. Sem promessas milagrosas.</p>
+    </div>
+    <div class="hero-visual" aria-label="Ilustração decorativa de gráfico econômico">
+      <div class="visual-top"><span>Radar econômico</span><span class="live">Painel ilustrativo</span></div>
+      <div class="chart">
+        <svg viewBox="0 0 500 190" role="img" aria-label="Linha gráfica ilustrativa, sem dados reais">
+          <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5be7f5" stop-opacity=".3"/><stop offset="1" stop-color="#5be7f5" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 155 C35 145 45 160 78 126 S120 137 150 100 S190 130 220 85 S265 105 300 65 S345 82 375 50 S420 65 500 12 L500 190 L0 190Z" fill="url(#area)"/>
+          <path d="M0 155 C35 145 45 160 78 126 S120 137 150 100 S190 130 220 85 S265 105 300 65 S345 82 375 50 S420 65 500 12" fill="none" stroke="#5be7f5" stroke-width="3" stroke-linecap="round"/>
+          <path d="M0 175 L500 175" stroke="#ffffff25" stroke-dasharray="4 6"/>
+          <circle cx="375" cy="50" r="5" fill="#ffd229" stroke="#07111e" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="visual-bottom"><div class="stat"><small>Foco editorial</small><strong>Economia</strong></div><div class="stat"><small>Explicações</small><strong>Sem jargão</strong></div><div class="stat"><small>Referências</small><strong><span>Fontes verificáveis</span></strong></div></div>
+      <div class="float-tag">DADO + CONTEXTO</div>
+    </div>
+  </div>
+</section>
+<div class="trustbar"><div class="wrap trust-inner"><span>✦ <b>Economia</b> em linguagem simples</span><span>⌁ Mudanças tributárias</span><span>▦ Ferramentas práticas</span><span>◎ Fontes para conferir</span></div></div>
+
+<section id="noticias">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Comece por aqui</div><h2>Em destaque</h2></div><p>Conteúdos introdutórios para entender os assuntos que podem afetar decisões do dia a dia e de pequenos negócios.</p></div>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-art"><div class="art-orbit"></div></div>
+        <div class="feature-content"><span class="tag">Tributos · Guia explicativo</span><h3>Split Payment: o que é e por que esse mecanismo importa?</h3><p>Entenda a ideia de separar a parcela de tributos no pagamento e quais perguntas empresas precisam acompanhar nas regras de implementação.</p><button class="btn read-article" data-article="split">Ler explicação →</button></div>
+      </article>
+      <article class="feature-small">
+        <div><span class="tag">Para pequenos negócios</span><div class="mini-chart"><svg viewBox="0 0 320 100" aria-label="Gráfico ilustrativo"><path d="M0 82 L38 65 L70 72 L110 43 L145 55 L183 28 L215 42 L260 15 L320 20" fill="none" stroke="#ffd229" stroke-width="3"/><path d="M0 92 L320 92" stroke="#ffffff25"/></svg></div><h3>Como acompanhar mudanças sem cair em boatos</h3><p>Um roteiro simples para conferir notícias, identificar propostas e encontrar a regra oficial.</p></div>
+        <button class="read-link read-article" data-article="boatos">Ver roteiro <span>→</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="categorias" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Informação por tema</div><h2>Explore os assuntos</h2></div><p>Use os filtros para encontrar o tipo de conteúdo que procura.</p></div>
+    <div class="category-row" role="group" aria-label="Filtrar notícias">
+      <button class="chip active" data-filter="todos">Todos os temas</button><button class="chip" data-filter="tributos">Tributos</button><button class="chip" data-filter="economia">Economia</button><button class="chip" data-filter="negocios">Negócios</button><button class="chip" data-filter="ferramentas">Ferramentas</button>
+    </div>
+    <div class="news-grid" id="newsGrid">
+      <article class="news-card" data-category="tributos"><div class="news-art"><span class="art-label">Reforma tributária</span><span class="art-symbol">⌘</span></div><div class="news-body"><div class="news-meta">Tributos · 5 min de leitura</div><h3>Reforma tributária: como separar regra aprovada de proposta?</h3><p>Aprenda a identificar o que já foi definido, o que depende de regulamentação e onde acompanhar atualizações.</p><button class="read-link read-article" data-article="reforma">Ler explicação <span>→</span></button></div></article>
+      <article class="news-card" data-category="economia"><div class="news-art gold"><span class="art-label">Economia</span><span class="art-symbol">↗</span></div><div class="news-body"><div class="news-meta">Economia · 4 min de leitura</div><h3>Juros: o que observar antes de tirar conclusões?</h3><p>Veja como juros, inflação e crédito se relacionam — e por que uma manchete isolada não conta a história toda.</p><button class="read-link read-article" data-article="juros">Ler explicação <span>→</span></button></div></article>
+      <article class="news-card" data-category="negocios"><div class="news-art teal"><span class="art-label">Marketplace</span><span class="art-symbol">▧</span></div><div class="news-body"><div class="news-meta">Negócios · 6 min de leitura</div><h3>Vende em marketplace? Organize custos e recebimentos</h3><p>Uma lista prática para acompanhar taxas, frete, impostos, prazos de repasse e margem por produto.</p><button class="read-link read-article" data-article="marketplace">Ver checklist <span>→</span></button></div></article>
+      <article class="news-card" data-category="ferramentas"><div class="news-art purple"><span class="art-label">Ferramentas</span><span class="art-symbol">▤</span></div><div class="news-body"><div class="news-meta">Ferramentas · 3 min de leitura</div><h3>Planilha básica para visualizar o caixa do negócio</h3><p>Quais números registrar para enxergar entradas, saídas, custos e saldo sem misturar dinheiro pessoal e empresarial.</p><button class="read-link read-article" data-article="caixa">Ver roteiro <span>→</span></button></div></article>
+      <article class="news-card" data-category="tributos"><div class="news-art gold"><span class="art-label">Fontes oficiais</span><span class="art-symbol">◎</span></div><div class="news-body"><div class="news-meta">Tributos · 3 min de leitura</div><h3>Onde consultar informações tributárias confiáveis</h3><p>Conheça os caminhos para conferir normas, comunicados e orientações diretamente nos canais oficiais.</p><button class="read-link read-article" data-article="fontes">Ver fontes <span>→</span></button></div></article>
+      <article class="news-card" data-category="economia"><div class="news-art"><span class="art-label">Educação financeira</span><span class="art-symbol">⌁</span></div><div class="news-body"><div class="news-meta">Economia · 4 min de leitura</div><h3>Como ler uma notícia econômica com senso crítico</h3><p>Cheque data, contexto, fonte, período comparado e se o número citado mede exatamente o que a manchete afirma.</p><button class="read-link read-article" data-article="leitura">Ler guia <span>→</span></button></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="explain" id="guia">
+  <div class="wrap explain-grid">
+    <div><div class="kicker">Nosso método</div><h2>Menos ruído.<br>Mais contexto.</h2><p>A proposta da Virada Fiscal é tornar assuntos econômicos mais fáceis de entender, sem alarmismo e sem tratar hipótese como fato.</p><a class="btn" href="#newsletter">Receber o guia gratuito →</a></div>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><div><h3>O que aconteceu?</h3><p>Começamos pelo fato, com data e contexto.</p></div></div>
+      <div class="step"><span class="step-num">02</span><div><h3>O que está definido?</h3><p>Separamos regras vigentes, decisões publicadas, propostas e opiniões.</p></div></div>
+      <div class="step"><span class="step-num">03</span><div><h3>Quem pode ser afetado?</h3><p>Explicamos os impactos possíveis sem prometer resultados ou dar aconselhamento individual.</p></div></div>
+      <div class="step"><span class="step-num">04</span><div><h3>Onde conferir?</h3><p>Incluímos referências para o leitor consultar a informação original.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" style="padding-top:0">
+  <div class="wrap">
+    <div class="newsletter">
+      <div><div class="eyebrow"><span class="dot"></span> Resumo sem complicação</div><h2>Receba o Radar Virada Fiscal</h2><p>Um espaço para reunir novos guias e explicações sobre economia e negócios.</p></div>
+      <form id="signupForm"><div class="signup"><input type="email" id="email" placeholder="Seu melhor e-mail" aria-label="Seu e-mail" required><button class="btn" type="submit">Quero receber ↗</button></div><div class="form-note" id="formNote">Demonstração: o formulário ainda não está conectado a uma lista de e-mails.</div></form>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" style="padding-top:0">
+  <div class="wrap" style="border-top:1px solid #dbe4eb;padding-top:30px">
+    <div class="section-head"><div><div class="kicker">Sobre a Virada Fiscal</div><h2>Informação para entender, não para assustar.</h2></div><p>Este projeto é um portal educativo independente. Os exemplos desta versão são conteúdos demonstrativos e devem ser atualizados e conferidos antes da publicação como notícias atuais.</p></div>
+    <p style="font-size:13px;color:#627487;max-width:800px">Conteúdo informativo não substitui orientação contábil, jurídica ou financeira individual. Para decisões, consulte profissionais habilitados e verifique as regras e publicações oficiais mais recentes.</p>
+    <p style="font-size:12px"><strong>Fontes úteis:</strong> <a style="color:#087f98;text-decoration:underline" href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a> · <a style="color:#087f98;text-decoration:underline" href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener">Ministério da Fazenda</a> · <a style="color:#087f98;text-decoration:underline" href="https://www.bcb.gov.br/" target="_blank" rel="noopener">Banco Central</a> · <a style="color:#087f98;text-decoration:underline" href="https://www.planalto.gov.br/" target="_blank" rel="noopener">Planalto / legislação</a></p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark">VF</span><span class="brand-name">VIRADA<span>FISCAL</span></span></a><p>Economia, tributos e negócios explicados com clareza, contexto e referências.</p></div>
+      <div class="footer-links"><div><strong>Explorar</strong><a href="#noticias">Em destaque</a><a href="#categorias">Todos os temas</a><a href="#guia">Nosso método</a></div><div><strong>Informações</strong><a href="#sobre">Sobre o projeto</a><a href="#sobre">Fontes oficiais</a><a href="#newsletter">Newsletter</a></div></div>
+    </div>
+    <div class="legal"><span>© <span id="year"></span> Virada Fiscal. Projeto editorial independente.</span><span>Conteúdo educativo · Confira as fontes antes de tomar decisões.</span></div>
+  </div>
+</footer>
+
+<div class="modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box"><button class="modal-close" id="modalClose" aria-label="Fechar">×</button><div class="kicker" id="modalKicker">Guia explicativo</div><h2 id="modalTitle"></h2><div id="modalBody"></div><div class="modal-source" id="modalSource"></div></div>
+</div>
+<script>
+const articles = {
+ split:{kicker:"Tributos · Guia explicativo",title:"Split Payment: o que é e o que vale acompanhar",body:["Split Payment é um modelo de pagamento em que a parcela associada aos tributos pode ser segregada no momento da liquidação financeira da venda, conforme as regras aplicáveis.","Para entender os efeitos práticos, acompanhe a legislação e a regulamentação vigentes, os cronogramas de implementação e as orientações oficiais para cada tipo de operação. O impacto pode variar conforme o negócio, o sistema de pagamento e o enquadramento tributário.","Antes de compartilhar uma afirmação sobre prazos ou obrigações, confira a publicação original e a data da informação."],source:'Consulte: <a href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener">Ministério da Fazenda</a> e <a href="https://www.planalto.gov.br/" target="_blank" rel="noopener">legislação federal</a>. Este texto é introdutório e precisa ser atualizado com a regulamentação vigente.'},
+ boatos:{kicker:"Método · Checagem",title:"Como acompanhar mudanças sem cair em boatos",body:["1. Confira a data: conteúdos antigos podem voltar a circular fora de contexto.","2. Procure a fonte primária: lei, órgão público, comunicado oficial ou documento original.","3. Diferencie o status: proposta, texto aprovado, norma publicada e regra em vigor não são a mesma coisa.","4. Compare o título com o conteúdo e veja se os números têm período, unidade e população definidos."],source:'Fontes para começar: <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a> · <a href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener">Ministério da Fazenda</a>.'},
+ reforma:{kicker:"Tributos · Guia",title:"Reforma tributária: como acompanhar o que está definido",body:["Mudanças tributárias podem envolver emendas constitucionais, leis complementares, regulamentação e fases de transição. Cada documento tem um papel diferente.","Ao ler uma notícia, procure o número da norma, a data de publicação, a etapa de implementação e quem é abrangido. Não presuma que toda mudança já está valendo para todas as empresas.","Esta página é um guia de leitura, não um parecer sobre a situação fiscal de um negócio específico."],source:'Consulte a legislação publicada em <a href="https://www.planalto.gov.br/" target="_blank" rel="noopener">Planalto</a> e os materiais atualizados do <a href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener">Ministério da Fazenda</a>.'},
+ juros:{kicker:"Economia · Conceitos",title:"Juros: o que observar antes de tirar conclusões",body:["A taxa básica de juros influencia o custo do crédito e as condições financeiras, mas não explica sozinha todos os movimentos de preços, investimentos ou consumo.","Ao avaliar uma notícia, veja qual taxa está sendo citada, a data da decisão, as expectativas já incorporadas pelo mercado e os efeitos que são projeções, não certezas.","Não use um único indicador como previsão garantida para investimentos ou decisões de crédito."],source:'Acompanhe decisões e comunicados no <a href="https://www.bcb.gov.br/" target="_blank" rel="noopener">Banco Central do Brasil</a>.'},
+ marketplace:{kicker:"Negócios · Checklist",title:"Checklist para organizar as finanças de quem vende online",body:["Registre o valor bruto de cada venda, taxas da plataforma, frete, custo do produto, publicidade, devoluções e tributos aplicáveis.","Acompanhe também quando o dinheiro foi vendido, quando será repassado e quando efetivamente entrou na conta. Saldo de vendas e dinheiro disponível podem ser diferentes.","Use os números para estimar a margem por produto e converse com um contador sobre o enquadramento e as obrigações do seu negócio."],source:'Material educativo geral. Para obrigações específicas, consulte um contador e as orientações da <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a>.'},
+ caixa:{kicker:"Ferramentas · Organização",title:"O que registrar em uma planilha de fluxo de caixa",body:["Comece com data, descrição, categoria, entrada, saída, forma de pagamento e saldo. Separe as despesas pessoais das despesas da atividade.","Inclua custos variáveis, taxas, impostos estimados, estoque e valores a receber. Atualize com frequência e compare o previsto com o realizado.","Uma planilha ajuda a organizar informações, mas não substitui a escrituração contábil exigida quando aplicável."],source:'Conteúdo educativo. Consulte um profissional contábil para adaptar o controle ao seu negócio.'},
+ fontes:{kicker:"Fontes · Pesquisa",title:"Onde consultar informações tributárias confiáveis",body:["Receita Federal: orientações e serviços tributários federais.","Ministério da Fazenda: comunicados, políticas e explicações econômicas e tributárias.","Planalto: textos legais publicados e legislação federal.","Banco Central: decisões, indicadores, notas e séries econômicas.","Sempre confira a data e leia o documento original antes de compartilhar conclusões."],source:'Links oficiais: <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a> · <a href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener">Ministério da Fazenda</a> · <a href="https://www.planalto.gov.br/" target="_blank" rel="noopener">Planalto</a> · <a href="https://www.bcb.gov.br/" target="_blank" rel="noopener">Banco Central</a>.'},
+ leitura:{kicker:"Educação · Leitura crítica",title:"Como ler uma notícia econômica com senso crítico",body:["Confira quem publicou, quando foi publicado e de onde veio o dado.","Observe a unidade, o período comparado e se o dado é nominal, real, acumulado ou mensal.","Procure a metodologia e a fonte original. Uma correlação não prova, por si só, que um evento causou outro.","Separe fatos observáveis, interpretações de especialistas e previsões."],source:'Use fontes primárias sempre que possível e compare diferentes explicações antes de formar uma conclusão.'}
+};
+const modal=document.getElementById('articleModal');
+document.querySelectorAll('.read-article').forEach(btn=>btn.addEventListener('click',()=>{
+ const a=articles[btn.dataset.article]; if(!a)return;
+ document.getElementById('modalKicker').textContent=a.kicker;
+ document.getElementById('modalTitle').textContent=a.title;
+ document.getElementById('modalBody').innerHTML=a.body.map(p=>'<p>'+p+'</p>').join('');
+ document.getElementById('modalSource').innerHTML=a.source;
+ modal.classList.add('open');document.body.style.overflow='hidden';
+}));
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',()=>{
+ document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));chip.classList.add('active');
+ const f=chip.dataset.filter;
+ document.querySelectorAll('.news-card').forEach(card=>card.style.display=(f==='todos'||card.dataset.category===f)?'flex':'none');
+}));
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open?'true':'false');menuBtn.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';nav.querySelectorAll('a').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
+document.getElementById('signupForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formNote').textContent='Obrigado! Este formulário é uma demonstração; conecte um serviço de e-mail antes de publicar.';document.getElementById('email').value=''});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
